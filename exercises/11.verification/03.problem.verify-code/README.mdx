@@ -14,7 +14,7 @@ So you'll want to make sure the `type` is included in the form and that its
 value is derived from the `searchParams`.
 
 Once the code is submitted, we'll want to verify it by finding the verification
-in the database by it's `target` and `type` and only if it's not expired. If we
+in the database by its `target` and `type` and only if it's not expired. If we
 can't find one then we'll show an "Invalid code" error. If we can, then we'll
 use [`@epic-web/totp`](https://github.com/epicweb-dev/totp)'s `verifyTOTP`
 function to verify the code. If it's invalid then we'll show an "Invalid code"
